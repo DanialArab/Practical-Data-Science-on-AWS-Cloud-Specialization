@@ -44,5 +44,5 @@ One of the largest advantages of performing data science in the cloud is that yo
 
 Data lake as the centralized and secure repository can store, discover, and share virtually any amount and any type of your data. You can ingest data in its raw format without any prior data transformation. Whether it's structured relational data in the form of CSV or TSV files, semi-structured data such as JSON or XML files, or unstructured data such as images, audio, and media files. 
 
-![](https://github.com/DanialArab/images/blob/main/Practical-DS-with-AWS/data%20lake.PNG)
+![](https://github.com/DanialArab/images/blob/main/Practical-DS-with-AWS/data%20lakes.PNG)
 
