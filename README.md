@@ -8,6 +8,8 @@ Course 3: Optimize ML Models and Deploy Human-in-the-Loop Pipelines
 
 ## Analyze Datasets and Train ML Models using AutoML
 
+![](https://github.com/DanialArab/images/blob/main/Practical-DS-with-AWS/overview.PNG)
+
 ![](https://github.com/DanialArab/images/blob/main/Practical-DS-with-AWS/ML-Workflow.PNG)
 
 ### Scale up vs. Scale out 
