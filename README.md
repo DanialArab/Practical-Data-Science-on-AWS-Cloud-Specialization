@@ -110,3 +110,9 @@ Given this simplicity, you might wonder what is so special about this, and I hav
 
 Depending on what kind of data you are exploring and what kind of relationships in the data you're looking for, the type of visualizations you use might be different.
 
+Popular Python data analysis and visualization tools
++ Pandas
++ Numpy
++ Matplotlib
++ Seaborn 
+
