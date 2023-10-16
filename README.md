@@ -62,5 +62,7 @@ Data lake as the centralized and secure repository can store, discover, and shar
 
 ![](https://github.com/DanialArab/images/blob/main/Practical-DS-with-AWS/wrangler.PNG)
 
-AWS Glue
+#### AWS Glue
+
+
 Amazon Athena 
