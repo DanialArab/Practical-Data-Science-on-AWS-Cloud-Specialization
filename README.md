@@ -20,3 +20,7 @@ One of the biggest benefits of developing and running data science projects in t
 
 For data exploration, we can use Amazon S3 and AWS Glue to ingest and catalog the data, and then explore the data with SQL queries using Amazon Athena.
 
+The project we will be working on in this specialization would be:
+
+![](https://github.com/DanialArab/images/blob/main/Practical-DS-with-AWS/project.PNG)
+
