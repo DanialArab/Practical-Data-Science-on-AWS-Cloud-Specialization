@@ -39,3 +39,5 @@ The project we will be working on in this specialization would be:
 
 <a name="3"></a>
 ### Working with data
+
+One of the largest advantages of performing data science in the cloud is that you can store and process virtually any amount of data. The **infrastructure scales elastically with the size of your data.**
