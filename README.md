@@ -11,7 +11,8 @@ Reference: <a href="https://www.deeplearning.ai/courses/practical-data-science-s
          3. [AWS Glue](#7)
          4. [Amazon Athena](#8)
       2. [Data visualization](#9)
-      3. 
+   3. [Statistical bias and feature importance](#10) 
+
 Course 2: Build, Train, and Deploy ML Pipelines using BERT
 Course 3: Optimize ML Models and Deploy Human-in-the-Loop Pipelines
 
@@ -118,3 +119,7 @@ Popular Python data analysis and visualization tools
 + Matplotlib
 + Seaborn 
 
+<a name="10"></a>
+### Statistical bias and feature importance
+
+here
