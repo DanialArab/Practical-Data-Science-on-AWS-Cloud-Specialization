@@ -5,7 +5,11 @@ Reference: <a href="https://www.deeplearning.ai/courses/practical-data-science-s
 1. [Course 1: Analyze Datasets and Train ML Models using AutoML](#1)
    1. [Intro to Practical Data Science](#2)
    2. [Working with data](#3)
-   3. 
+      1. [Data lake](#4)
+      2. [AWS Data Wrangler](#5)
+      3. [AWS Glue](#6)
+      4. [Amazon Athena](#7)
+      
 Course 2: Build, Train, and Deploy ML Pipelines using BERT
 Course 3: Optimize ML Models and Deploy Human-in-the-Loop Pipelines
 
@@ -40,6 +44,7 @@ The project we will be working on in this specialization would be:
 <a name="3"></a>
 ### Working with data
 
+<a name="4"></a>
 #### Data lake
 
 One of the largest advantages of performing data science in the cloud is that you can store and process virtually any amount of data. The **infrastructure scales elastically with the size of your data.**
@@ -58,16 +63,17 @@ Data lake as the centralized and secure repository can store, discover, and shar
 
 **With a data lake in place, you can now use this **centralized data repository to enable data warehousing analytics and also machine learning.**
 
+<a name="5"></a>
 #### AWS Data Wrangler 
 
 ![](https://github.com/DanialArab/images/blob/main/Practical-DS-with-AWS/wrangler.PNG)
 
+<a name="6"></a>
 #### AWS Glue
 
 This **data catalog service** is used to register or catalog the data stored in S3. **similar to taking inventory in a shop**, you need to know what data is stored in your S3 data lake, or bucket (as an individual container for objects). Using the Data Catalog Service, you create a reference to the data, basically S3 to table mapping. The **AWS Glue table**, which is created inside an AWS Glue database, **only contains the metadata information such as the data schema**. It's important to note that **no data is moved**. All the data remains in your S3 location. You catalog where to find the data and which schema should be used, to query the data. Instead of manually registering the data, you can also use **AWS Glue Crawler**. A Crawler can be used and set up to run on a schedule or to automatically find new data, which includes inferring the data schema and also to update the data catalog. 
 
 ![](https://github.com/DanialArab/images/blob/main/Practical-DS-with-AWS/register%20data%20with%20glue.PNG)
-
 
 **How to register the data?**
 
@@ -77,6 +83,7 @@ You can use the AWS Data Wrangler tool:
 
 The catalog.create_CSV_table function will only store the schema and the metadata in the AWS Glue Data Catalog table that you specify. **The actual data again remains in your S3 bucket**. Now you can query the data stored in S3, using a tool called Amazon Athena
 
+<a name="7"></a>
 #### Amazon Athena 
 
 Athena is 
