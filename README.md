@@ -5,11 +5,13 @@ Reference: <a href="https://www.deeplearning.ai/courses/practical-data-science-s
 1. [Course 1: Analyze Datasets and Train ML Models using AutoML](#1)
    1. [Intro to Practical Data Science](#2)
    2. [Working with data](#3)
-      1. [Data lake](#4)
-      2. [AWS Data Wrangler](#5)
-      3. [AWS Glue](#6)
-      4. [Amazon Athena](#7)
-      
+      1. [Data ingestion and exploration](#4)
+         1. [Data lake](#5)
+         2. [AWS Data Wrangler](#6)
+         3. [AWS Glue](#7)
+         4. [Amazon Athena](#8)
+      2. [Data visualization](#9)
+      3. 
 Course 2: Build, Train, and Deploy ML Pipelines using BERT
 Course 3: Optimize ML Models and Deploy Human-in-the-Loop Pipelines
 
@@ -45,7 +47,10 @@ The project we will be working on in this specialization would be:
 ### Working with data
 
 <a name="4"></a>
-#### Data lake
+#### Data ingestion and exploration]
+
+<a name="5"></a>
+##### Data lake
 
 One of the largest advantages of performing data science in the cloud is that you can store and process virtually any amount of data. The **infrastructure scales elastically with the size of your data.**
 
@@ -63,13 +68,13 @@ Data lake as the centralized and secure repository can store, discover, and shar
 
 **With a data lake in place, you can now use this **centralized data repository to enable data warehousing analytics and also machine learning.**
 
-<a name="5"></a>
-#### AWS Data Wrangler 
+<a name="6"></a>
+##### AWS Data Wrangler 
 
 ![](https://github.com/DanialArab/images/blob/main/Practical-DS-with-AWS/wrangler.PNG)
 
-<a name="6"></a>
-#### AWS Glue
+<a name="7"></a>
+##### AWS Glue
 
 This **data catalog service** is used to register or catalog the data stored in S3. **similar to taking inventory in a shop**, you need to know what data is stored in your S3 data lake, or bucket (as an individual container for objects). Using the Data Catalog Service, you create a reference to the data, basically S3 to table mapping. The **AWS Glue table**, which is created inside an AWS Glue database, **only contains the metadata information such as the data schema**. It's important to note that **no data is moved**. All the data remains in your S3 location. You catalog where to find the data and which schema should be used, to query the data. Instead of manually registering the data, you can also use **AWS Glue Crawler**. A Crawler can be used and set up to run on a schedule or to automatically find new data, which includes inferring the data schema and also to update the data catalog. 
 
@@ -83,8 +88,8 @@ You can use the AWS Data Wrangler tool:
 
 The catalog.create_CSV_table function will only store the schema and the metadata in the AWS Glue Data Catalog table that you specify. **The actual data again remains in your S3 bucket**. Now you can query the data stored in S3, using a tool called Amazon Athena
 
-<a name="7"></a>
-#### Amazon Athena 
+<a name="8"></a>
+##### Amazon Athena 
 
 Athena is 
 + an interactive queries service that lets you run standard SQL queries to explore your data. \
@@ -99,3 +104,6 @@ Athena is
 Given this simplicity, you might wonder what is so special about this, and I have to admit the SQL query I've shown here was fairly simple. But just imagine building highly complex analytical queries to run against not just gigabytes, but potentially terabytes, or petabytes of data. Using Athena, you don't have to worry about any compute and memory resources to support this query, because Athena will automatically scale out and split the query into simpler queries to run in parallel against your data. **Athena is based on Presto, an open-source distributed SQL engine**, developed for this exact use case, running interactive queries against data sources of all sizes. And remember, no installation or infrastructure setup is needed, and no data movement is required. Just register your data with AWS Glue and use Amazon Athena to explore your datasets from the comfort of your Python environment.
 
 ![](https://github.com/DanialArab/images/blob/main/Practical-DS-with-AWS/quering%20the%20data%202.PNG)
+
+<a name="9"></a>
+#### Data visualization 
