@@ -54,6 +54,8 @@ Data lake as the centralized and secure repository can store, discover, and shar
 
 **File storage** stores and manages data as individual files organized in hierarchical file folder structures. In contrast, **block storage** stores and manages data as individual **chunks called blocks**. Each block receives a unique identifier, but no additional metadata is stored with that block. With **object storage**, data is stored and managed as objects, which consists of the **data itself, any relevant metadata**, such as when the object was last modified, and a unique identifier. **Object storage is particularly helpful for storing and retrieving growing amounts of data of any type, hence it's the perfect foundation for data lakes.**
 
+**With a data lake in place, you can now use this **centralized data repository to enable data warehousing analytics and also machine learning.**
+
 AWS Data Wrangler 
 AWS Glue
 Amazon Athena 
