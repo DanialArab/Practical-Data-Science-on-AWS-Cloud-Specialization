@@ -15,6 +15,8 @@ Course 3: Optimize ML Models and Deploy Human-in-the-Loop Pipelines
 <a name="2"></a>
 ### Intro to Practical Data Science
 
+The whole idea is to go from local to cloud to handle large datasets. 
+
 ![](https://github.com/DanialArab/images/blob/main/Practical-DS-with-AWS/overview.PNG)
 
 ![](https://github.com/DanialArab/images/blob/main/Practical-DS-with-AWS/ML-Workflow.PNG)
