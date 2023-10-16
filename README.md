@@ -24,7 +24,7 @@ The project we will be working on in this specialization would be:
 
 ![](https://github.com/DanialArab/images/blob/main/Practical-DS-with-AWS/project.PNG)
 
- A great resource to explore product reviews are e-commerce sites. You can use the review text as the input feature for the model training and the sentiment as a label for model training. The sentiment class is usually expressed as an integer value for model training such as 1 for positive sentiment, 0 for neutral sentiment, and -1 for negative sentiment.
+ A great resource to explore product reviews are e-commerce sites. You can use the review text as the input feature for the model training and the sentiment as a label for model training. The sentiment class is usually expressed as an integer value for model training such as 1 for positive sentiment, 0 for neutral sentiment, and -1 for negative sentiment:
  
 ![](https://github.com/DanialArab/images/blob/main/Practical-DS-with-AWS/product-review.PNG)
 
