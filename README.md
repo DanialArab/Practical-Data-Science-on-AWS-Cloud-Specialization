@@ -40,6 +40,8 @@ The project we will be working on in this specialization would be:
 <a name="3"></a>
 ### Working with data
 
+#### Data lake
+
 One of the largest advantages of performing data science in the cloud is that you can store and process virtually any amount of data. The **infrastructure scales elastically with the size of your data.**
 
 Data lake as the centralized and secure repository can store, discover, and share virtually any amount and any type of your data. You can ingest data in its raw format without any prior data transformation. Whether it's structured relational data in the form of CSV or TSV files, semi-structured data such as JSON or XML files, or unstructured data such as images, audio, and media files. 
@@ -56,6 +58,8 @@ Data lake as the centralized and secure repository can store, discover, and shar
 
 **With a data lake in place, you can now use this **centralized data repository to enable data warehousing analytics and also machine learning.**
 
-AWS Data Wrangler 
+#### AWS Data Wrangler 
+
+
 AWS Glue
 Amazon Athena 
