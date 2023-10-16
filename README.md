@@ -47,3 +47,7 @@ Data lake as the centralized and secure repository can store, discover, and shar
 ![](https://github.com/DanialArab/images/blob/main/Practical-DS-with-AWS/data%20lakes.PNG)
 
 **Data lakes are often built on top of object storage, such as Amazon S3.** 
+
+AWS Data Wrangler 
+AWS Glue
+Amazon Athena 
