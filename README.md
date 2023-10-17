@@ -128,5 +128,8 @@ We use the following AWS tools to perform bias detection on our training data se
 
 ![](https://github.com/DanialArab/images/blob/main/Practical-DS-with-AWS/bias.PNG)
 
+Causes of the statistical bias:
+
 ![](https://github.com/DanialArab/images/blob/main/Practical-DS-with-AWS/bias%20causes.PNG)
 
+Data drift happens, especially when the data distribution significantly varies from the distribution of the training data that was used to initially train the model. This is called data drift and also data shift. There are several different variations of data drift. Sometimes the distribution of the **independent variables or the features** that make up your dataset can change. That's called covariant drift. Sometimes the **data distribution of your labels or the targeted variables** might change. That's the second one, which is prior probability drift. Sometimes the relationship between the two, that is the relationship between the features and the labels can change as well. That's called concept drift. Concept drift, also called as concept shift, can happen when the definition of the label itself changes based on a particular feature, like age or geographical location. 
