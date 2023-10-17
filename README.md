@@ -146,3 +146,4 @@ Metrics used to measure imbalance in data:
 
 ![](https://github.com/DanialArab/images/blob/main/Practical-DS-with-AWS/DPL.PNG)
 
+More metrics: https://docs.aws.amazon.com/sagemaker/latest/dg/clarify-measure-data-bias.html
