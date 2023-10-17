@@ -128,3 +128,5 @@ We use the following AWS tools to perform bias detection on our training data se
 
 ![](https://github.com/DanialArab/images/blob/main/Practical-DS-with-AWS/bias.PNG)
 
+![](https://github.com/DanialArab/images/blob/main/Practical-DS-with-AWS/bias%20causes.PNG)
+
