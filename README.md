@@ -125,3 +125,6 @@ Popular Python data analysis and visualization tools
 We use the following AWS tools to perform bias detection on our training data sets:
 + SageMaker Data Wrangler and
 + SageMaker Clarify 
+
+![](https://github.com/DanialArab/images/blob/main/Practical-DS-with-AWS/bias.PNG)
+
