@@ -122,4 +122,6 @@ Popular Python data analysis and visualization tools
 <a name="10"></a>
 ### Statistical bias and feature importance
 
-here
+We use the following AWS tools to perform bias detection on our training data sets:
++ SageMaker Data Wrangler and
++ SageMaker Clarify 
