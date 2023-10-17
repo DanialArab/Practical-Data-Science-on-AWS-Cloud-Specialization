@@ -137,3 +137,12 @@ Data drift happens, especially when the data distribution significantly varies f
 Measuring statistical bias
 
 A facet is a sensitive feature in your dataset, that you want to analyze for these imbalances. Let's take, for example, the product review dataset. In that dataset or product category, there could be a facet, or a feature interest for you, that you want to analyze for imbalances.
+
+Metrics used to measure imbalance in data:
++ Class imbalance (CI)
++ Difference in proportions of labels (DPL)
+
+![](https://github.com/DanialArab/images/blob/main/Practical-DS-with-AWS/CI.PNG)
+
+![](https://github.com/DanialArab/images/blob/main/Practical-DS-with-AWS/DPL.PNG)
+
