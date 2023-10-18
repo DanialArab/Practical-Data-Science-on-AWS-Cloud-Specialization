@@ -20,6 +20,7 @@ Reference: <a href="https://www.deeplearning.ai/courses/practical-data-science-s
             2. [Detect statistical bias with Amazon SageMaker Clarify](#16)
          4. [SageMaker Data Wrangler vs. SageMaker Clarify](#17)
       2. [Feature importance](#18)
+   4. [Use automated ML to train a Text Classifier](#19)
 
 Course 2: Build, Train, and Deploy ML Pipelines using BERT
 Course 3: Optimize ML Models and Deploy Human-in-the-Loop Pipelines
@@ -244,3 +245,6 @@ Feature importance is based on a very popular open-source framework called **(SH
 Using the SHAP framework, you can provide both local and global explanations. While the **local** explanation focuses on indicating how an **individual feature** contributes to the final model, the **global** explanation takes a much more comprehensive view in trying to understand how the **data** in its entirety contributes to the final outcome from the machine learning model.
 
 We introduced two new concepts that help you gain a better understanding of the quality of your data: statistical bias (Detecting statistical bias in the training dataset can help you gain insight into how imbalanced the dataset could be) and feature importance (the generated report give you an insight into how the individual features of the training dataset are contributing to the final model). 
+
+<a name="19"></a>
+## Use automated ML to train a Text Classifier
