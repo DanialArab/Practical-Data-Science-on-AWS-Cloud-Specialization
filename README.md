@@ -247,5 +247,5 @@ Using the SHAP framework, you can provide both local and global explanations. Wh
 We introduced two new concepts that help you gain a better understanding of the quality of your data: statistical bias (Detecting statistical bias in the training dataset can help you gain insight into how imbalanced the dataset could be) and feature importance (the generated report give you an insight into how the individual features of the training dataset are contributing to the final model). 
 
 <a name="19"></a>
-## Use automated ML to train a Text Classifier
+### Use automated ML to train a Text Classifier
 here
