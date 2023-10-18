@@ -165,13 +165,13 @@ Detect statistical bias with Amazon SageMaker Clarify
 
 We use the clarify library from the Sagemaker SDK:
 
-   from sagemaker import clarify
-   
-   clarify_processor = clarify.SageMakeClarifyProcessor(
-      role = role,
-      instance_count = 1,
-      instance_type = 'ml.c5.2xlarge',
-      sagemaker_session = sess)
-   
-   bias_report_output_path = 'my S3 path'
+      from sagemaker import clarify
+      
+      clarify_processor = clarify.SageMakeClarifyProcessor(
+         role = role,
+         instance_count = 1,
+         instance_type = 'ml.c5.2xlarge',
+         sagemaker_session = sess)
+      
+      bias_report_output_path = 'my S3 path'
 
