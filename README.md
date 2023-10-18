@@ -204,4 +204,6 @@ Once you have configured those three objects, you are ready to run the pre-train
 
 The result will actually be a very detailed report on the bias on your dataset that has persisted in S3 bucket. You can download the report and review in detail to understand the behavior of your data.
 
-
+SageMaker Data Wrangler vs. SageMaker Clarify
++ Data Wrangler, provides you with more of a **UI-based visual experience**. So, if you would like to connect to multiple data sources and explore your data in more visual format, and configure what goes into your bias reports by making selections from drop-down boxes and option buttons, and finally, launch the bias detection job using a button click, Data Wrangler is the tool for you. Keep in mind that Data Wrangler is only using a **subset of your data to detect bias in that data set**.
++ On the other hand, SageMaker Clarify provides you with more of an **API-based approach**. Additionally, Clarify also provides you with the ability to **scale out the bias detection process**. SageMaker Clarify uses a construct called processing jobs that allow you to configure a **distributed cluster to execute your bias detection job at scale**. So, if you're thinking of **large volumes** of data, for example, millions of millions of rows of product reviews, and you want to explore that data set for bias, then SageMaker Clarify is the tool for you, so that you can take advantage of the scale and capacity offered by Cloud.
