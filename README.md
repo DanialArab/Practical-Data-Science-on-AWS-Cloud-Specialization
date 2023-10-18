@@ -233,6 +233,8 @@ The result will actually be a very detailed report on the bias on your dataset t
 
 We can use SageMaker Data Wrangler to calculate feature importance (the open-source framework SHAP is behind the feature importance calculations). 
 
+more details on SHAP: https://shap.readthedocs.io/en/latest/ 
+
 ![](https://github.com/DanialArab/images/blob/main/Practical-DS-with-AWS/feature%20importance.PNG)
 
 Feature importance is based on a very popular open-source framework called **(SHapley Additive exPlanations)**. 
@@ -241,3 +243,4 @@ Feature importance is based on a very popular open-source framework called **(SH
 
 Using the SHAP framework, you can provide both local and global explanations. While the **local** explanation focuses on indicating how an **individual feature** contributes to the final model, the **global** explanation takes a much more comprehensive view in trying to understand how the **data** in its entirety contributes to the final outcome from the machine learning model.
 
+We introduced two new concepts that help you gain a better understanding of the quality of your data: statistical bias (Detecting statistical bias in the training dataset can help you gain insight into how imbalanced the dataset could be) and feature importance (the generated report give you an insight into how the individual features of the training dataset are contributing to the final model). 
