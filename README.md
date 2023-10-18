@@ -151,8 +151,13 @@ Metrics used to measure imbalance in data:
 
 More metrics: https://docs.aws.amazon.com/sagemaker/latest/dg/clarify-measure-data-bias.html
 
-Sagemaker Data Wrangler
+Detect statistical bias with Sagemaker Data Wrangler
 
 ![](https://github.com/DanialArab/images/blob/main/Practical-DS-with-AWS/sagemaker%20data%20wrangler.PNG)
 
 Data Wrangler provides you with capabilities to connect to various different sources for your data, visualize the data, and transform the data, by applying any number of transformations in the Data Wrangler environment, and, detect statistical bias in your data sets, and generate reports about the bias detected in those data sets. It also provides capabilities to provide feature importance calculations on your training data set.
+
+Detect statistical bias with Amazon SageMaker Clarify
+
+![](https://github.com/DanialArab/images/blob/main/Practical-DS-with-AWS/clarify.PNG)
+
