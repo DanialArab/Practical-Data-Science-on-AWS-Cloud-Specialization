@@ -239,5 +239,5 @@ Feature importance is based on a very popular open-source framework called **(SH
 
 ![](https://github.com/DanialArab/images/blob/main/Practical-DS-with-AWS/SHAP.PNG)
 
-Using the SHAP framework, you can provide both local and global explanations. While the local explanation focuses on indicating how an individual feature contributes to the final model, the global explanation takes a much more comprehensive view in trying to understand how the data in its entirety contributes to the final outcome from the machine learning model.
+Using the SHAP framework, you can provide both local and global explanations. While the **local** explanation focuses on indicating how an **individual feature** contributes to the final model, the **global** explanation takes a much more comprehensive view in trying to understand how the **data** in its entirety contributes to the final outcome from the machine learning model.
 
