@@ -198,7 +198,7 @@ Once you have configured those three objects, you are ready to run the pre-train
       clarify_processor.run_pre_training_bias(
          data_config = ...,
          data_bias_config = ...,
-         methods = ['CL', 'DPL', ...],
+         methods = ['CI', 'DPL', ...],
          wait = True,
          logs = True)
 
