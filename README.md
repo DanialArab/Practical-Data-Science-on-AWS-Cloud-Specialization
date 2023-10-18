@@ -167,7 +167,7 @@ We use the clarify library from the Sagemaker SDK:
 
       from sagemaker import clarify
       
-      clarify_processor = clarify.SageMakeClarifyProcessor(
+      clarify_processor = clarify.SageMakerClarifyProcessor(
          role = role,
          instance_count = 1,
          instance_type = 'ml.c5.2xlarge',
@@ -175,3 +175,7 @@ We use the clarify library from the Sagemaker SDK:
       
       bias_report_output_path = 'my S3 path'
 
+Some points:
+
++ SageMaker Clarify Processor is a construct that allows you to scale the bias detection process into a distributed cluster: instance_count represents the number of nodes that are included in the cluster, and instance_type represents the processing capacity of each individual node in the cluster.
++ 
