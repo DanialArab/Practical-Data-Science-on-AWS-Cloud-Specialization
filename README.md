@@ -181,7 +181,7 @@ Some points:
 
 The next step is to configure the data config object on the Clarify library:
 
-      bias_data_bonfig = clarify.DataConfig(
+      bias_data_config = clarify.DataConfig(
          s3_data_input_path = ...,
          s3_output_path = ...,
          label = 'sentiment',
