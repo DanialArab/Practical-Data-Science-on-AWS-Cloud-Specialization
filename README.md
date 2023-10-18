@@ -202,4 +202,6 @@ Once you have configured those three objects, you are ready to run the pre-train
          wait = True,
          logs = True)
 
-   
+The result will actually be a very detailed report on the bias on your dataset that has persisted in S3 bucket. You can download the report and review in detail to understand the behavior of your data.
+
+
