@@ -248,3 +248,4 @@ We introduced two new concepts that help you gain a better understanding of the 
 
 <a name="19"></a>
 ## Use automated ML to train a Text Classifier
+here
