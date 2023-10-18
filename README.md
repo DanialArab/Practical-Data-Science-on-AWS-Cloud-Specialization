@@ -1,4 +1,4 @@
-# Practical Data Science on AWS Cloud Specialization
+# Practical Data Science on AWS Cloud Specialization 
 
 Reference: <a href="https://www.deeplearning.ai/courses/practical-data-science-specialization/">Practical Data Science on AWS Cloud Specialization</a>
 
