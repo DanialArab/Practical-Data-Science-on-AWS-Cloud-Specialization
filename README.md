@@ -139,7 +139,7 @@ Causes of the statistical bias:
 
 Measuring statistical bias
 
-When we talk about these metrics, it's important to understand that these metrics are applicable to a particular facet of your dataset. A facet is a sensitive feature in your dataset, that you want to analyze for these imbalances. Let's take, for example, the product review dataset. In that dataset or product category, there could be a facet, or a feature interest for you, that you want to analyze for imbalances.
+When we talk about these metrics, it's important to understand that these metrics are applicable to a particular facet of your dataset. A facet is a sensitive feature in your dataset, that you want to analyze for these imbalances. Let's take, for example, the product review dataset. In that dataset or product category, there could be a facet, or a feature of interest for you, that you want to analyze for imbalances.
 
 Metrics used to measure imbalance in data:
 + Class imbalance (CI)
