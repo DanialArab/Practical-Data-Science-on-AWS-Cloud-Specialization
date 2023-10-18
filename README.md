@@ -178,4 +178,13 @@ We use the clarify library from the Sagemaker SDK:
 Some points:
 
 + SageMaker Clarify Processor is a construct that allows you to scale the bias detection process into a distributed cluster: instance_count represents the number of nodes that are included in the cluster, and instance_type represents the processing capacity of each individual node in the cluster.
-+ 
+
+The next step is to configure the data config object on the Clarify library:
+
+      bias_data_bonfig = clarify.DataConfig(
+         s3_data_input_path = ...,
+         s3_output_path = ...,
+         label = 'sentiment',
+         headers = df_balanced.columns.to_list(),
+         dataset_type = 'text/csv') 
+         
