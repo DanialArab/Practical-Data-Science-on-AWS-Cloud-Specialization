@@ -193,4 +193,13 @@ The next step is to configure the data config object on the Clarify library:
          label_values_or_threshold=[...],
          facet_name = 'product_category')
 
+Once you have configured those three objects, you are ready to run the pre-training bias method on the Clarify processor:
+
+      clarify_processor.run_pre_training_bias(
+         data_config = ...,
+         data_bias_config = ...,
+         methods = ['CL', 'DPL', ...],
+         wait = True,
+         logs = True)
+
    
