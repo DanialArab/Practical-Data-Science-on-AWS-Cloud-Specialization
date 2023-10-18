@@ -159,5 +159,19 @@ Data Wrangler provides you with capabilities to connect to various different sou
 
 Detect statistical bias with Amazon SageMaker Clarify
 
++ it can perform bias detection in trained and deployed models
+  
 ![](https://github.com/DanialArab/images/blob/main/Practical-DS-with-AWS/clarify.PNG)
+
+We use the clarify library from the Sagemaker SDK:
+
+   from sagemaker import clarify
+   
+   clarify_processor = clarify.SageMakeClarifyProcessor(
+      role = role,
+      instance_count = 1,
+      instance_type = 'ml.c5.2xlarge',
+      sagemaker_session = sess)
+   
+   bias_report_output_path = 'my S3 path'
 
