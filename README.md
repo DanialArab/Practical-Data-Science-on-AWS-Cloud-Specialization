@@ -231,7 +231,7 @@ The result will actually be a very detailed report on the bias on your dataset t
 <a name="18"></a>
 ### Feature importance
 
-We can use SageMaker Data Wrangler to calculate feature importance. 
+We can use SageMaker Data Wrangler to calculate feature importance (the open-source framework SHAP is behind the feature importance calculations). 
 
 ![](https://github.com/DanialArab/images/blob/main/Practical-DS-with-AWS/feature%20importance.PNG)
 
