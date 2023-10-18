@@ -188,3 +188,9 @@ The next step is to configure the data config object on the Clarify library:
          headers = df_balanced.columns.to_list(),
          dataset_type = 'text/csv') 
          
+
+      bias_config = clarify.BiasConfig(
+         label_values_or_threshold=[...],
+         facet_name = 'product_category')
+
+   
