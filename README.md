@@ -11,7 +11,15 @@ Reference: <a href="https://www.deeplearning.ai/courses/practical-data-science-s
          3. [AWS Glue](#7)
          4. [Amazon Athena](#8)
       2. [Data visualization](#9)
-   3. [Statistical bias and feature importance](#10) 
+   3. [Statistical bias and feature importance](#10)
+      1. [Statistical bias](#11)
+         1. [AWS tools to perform bias detection](#12)
+         2. [Causes of the statistical bias](#13)
+         3. [Measuring statistical bias](#14)
+            1. [Detect statistical bias with Sagemaker Data Wrangler](#15)
+            2. [Detect statistical bias with Amazon SageMaker Clarify](#16)
+         4. [SageMaker Data Wrangler vs. SageMaker Clarify](#17)
+      2. [Feature importance](#18)
 
 Course 2: Build, Train, and Deploy ML Pipelines using BERT
 Course 3: Optimize ML Models and Deploy Human-in-the-Loop Pipelines
@@ -122,13 +130,20 @@ Popular Python data analysis and visualization tools
 <a name="10"></a>
 ### Statistical bias and feature importance
 
+<a name="11"></a>
+#### Statistical bias
+
+<a name="12"></a>
+##### AWS tools to perform bias detection
+
 We use the following AWS tools to perform bias detection on our training data sets:
 + SageMaker Data Wrangler and
 + SageMaker Clarify 
 
 ![](https://github.com/DanialArab/images/blob/main/Practical-DS-with-AWS/bias.PNG)
 
-Causes of the statistical bias:
+<a name="13"></a>
+##### Causes of the statistical bias
 
 ![](https://github.com/DanialArab/images/blob/main/Practical-DS-with-AWS/bias%20causes.PNG)
 
@@ -137,7 +152,8 @@ Causes of the statistical bias:
 + Selection bias (**feedback loop**) can be introduced by the ML itself. Take, for example, a streaming service. You want to watch a movie on the streaming service and the streaming service makes a few recommendations for you, and you decide to watch Dancing with Wolves. You like the movie and you rate it high. From then on, the streaming service is recommending you the movies that have wolves in them. It's partly because of the **feedback** you provided to the service. But in reality, maybe you watched that movie because you like the actors in the movie, and you don't even particularly like wolves. Situations like this could result in selection bias, that includes a feedback loop, that involves both the model consumers and the machine learning model itself.
 + Data drift happens, especially when the data distribution significantly varies from the distribution of the training data that was used to initially train the model. This is called data drift and also data shift. There are several different variations of data drift. Sometimes the distribution of the **independent variables or the features** that make up your dataset can change. That's called covariant drift. Sometimes the **data distribution of your labels or the targeted variables** might change. That's the second one, which is prior probability drift. Sometimes the relationship between the two, that is the relationship between the features and the labels can change as well. That's called concept drift. Concept drift, also called as concept shift, can happen when the definition of the label itself changes based on a particular feature, like age or geographical location. 
 
-Measuring statistical bias
+<a name="14"></a>
+##### Measuring statistical bias
 
 When we talk about these metrics, it's important to understand that these metrics are applicable to a particular facet of your dataset. A facet is a sensitive feature in your dataset, that you want to analyze for these imbalances. Let's take, for example, the product review dataset. In that dataset or product category, there could be a facet, or a feature of interest for you, that you want to analyze for imbalances.
 
@@ -151,13 +167,15 @@ Metrics used to measure imbalance in data:
 
 More metrics: https://docs.aws.amazon.com/sagemaker/latest/dg/clarify-measure-data-bias.html
 
-Detect statistical bias with Sagemaker Data Wrangler
+<a name="15"></a>
+###### Detect statistical bias with Sagemaker Data Wrangler
 
 ![](https://github.com/DanialArab/images/blob/main/Practical-DS-with-AWS/sagemaker%20data%20wrangler.PNG)
 
 Data Wrangler provides you with capabilities to connect to various different sources for your data, visualize the data, and transform the data, by applying any number of transformations in the Data Wrangler environment, and, detect statistical bias in your data sets, and generate reports about the bias detected in those data sets. It also provides capabilities to provide feature importance calculations on your training data set.
 
-Detect statistical bias with Amazon SageMaker Clarify
+<a name="16"></a>
+###### Detect statistical bias with Amazon SageMaker Clarify
 
 + it can perform bias detection in trained and deployed models
   
@@ -204,11 +222,14 @@ Once you have configured those three objects, you are ready to run the pre-train
 
 The result will actually be a very detailed report on the bias on your dataset that has persisted in S3 bucket. You can download the report and review in detail to understand the behavior of your data.
 
-SageMaker Data Wrangler vs. SageMaker Clarify
+<a name="17"></a>
+##### SageMaker Data Wrangler vs. SageMaker Clarify
+
 + Data Wrangler, provides you with more of a **UI-based visual experience**. So, if you would like to connect to multiple data sources and explore your data in more visual format, and configure what goes into your bias reports by making selections from drop-down boxes and option buttons, and finally, launch the bias detection job using a button click, Data Wrangler is the tool for you. Keep in mind that Data Wrangler is only using a **subset of your data to detect bias in that data set**.
 + On the other hand, SageMaker Clarify provides you with more of an **API-based approach**. Additionally, Clarify also provides you with the ability to **scale out the bias detection process**. SageMaker Clarify uses a construct called processing jobs that allow you to configure a **distributed cluster to execute your bias detection job at scale**. So, if you're thinking of **large volumes** of data, for example, millions of millions of rows of product reviews, and you want to explore that data set for bias, then SageMaker Clarify is the tool for you, so that you can take advantage of the scale and capacity offered by Cloud.
 
-Feature importance
+<a name="18"></a>
+### Feature importance
 
 ![](https://github.com/DanialArab/images/blob/main/Practical-DS-with-AWS/feature%20importance.PNG)
 
